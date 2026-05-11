@@ -4,9 +4,6 @@ This repo keeps the code for a WNBA franchise decision model. The main loop is
 in Task 1. The other task folders add roster input, expansion shocks, ticket
 pricing, and injury risk.
 
-The repo does not include the contest submission, prompt files, raw third-party
-data, or local working notes.
-
 ## Layout
 
 ```text
@@ -97,14 +94,3 @@ Some commands need real WNBA data. The files in `sample_data/` are just schema
 examples; `prepare_sample_project_data.py` creates a small local dataset for
 checking that the model entry points run.
 
-## Before Publishing
-
-Run a local scan for your own private markers: contest identifiers, local user
-names, absolute paths, school or member names, email addresses, phone numbers,
-and editor image-cache paths.
-
-```bash
-rg -n --hidden -S "<private-marker-1>|<private-marker-2>|<local-path>" .
-```
-
-The command should return nothing.
