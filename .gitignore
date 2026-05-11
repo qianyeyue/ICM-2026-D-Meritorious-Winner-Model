@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local/editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated outputs and archives
+archive/
+outputs/
+pic/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.docx
+*.xlsx
+*.zip
+
+# Real or generated data
+data/
+project/data/
+project/model/task1_input/
+project/model/sensitivity/pic/
+project/model/**/outputs/
+project/model/**/archive/
+project/model/**/__pycache__/
+
+# Old reports, generated summaries, and exploratory scripts kept out of release.
+project/model/regression_summary.txt
+project/model/sensitivity/
+project/model/tests/
+project/model/test_*.py
+project/model/simulation/simulation.py
+project/model/simulation/optimized_config.py
+project/model/simulation/predict_2025.py
+project/model/simulation/run_*.py
+project/model/simulation/test_*.py
+project/model/simulation/task1_complete.py
+project/model/simulation/task1_initializer.py
+project/model/simulation/task1_integration_example.py
+project/model/simulation/task2_main.py
+project/model/simulation/task3_simple.py
+project/model/task3/test_*.py
+project/model/task4/QUICK_START.py
+project/model/task4/run_task4_example.py
+project/model/task4/task4_complete_example.py
+project/model/task4/task4_strategy_analysis.py
+project/model/task4/test_*.py
+project/model/task4/verify_task4.py
+project/model/task4/visualize_task4.py
+project/model/task5/test_*.py
+
+# Keep curated sample data, but ignore generated sample outputs.
+!sample_data/
+!sample_data/README.md
+!sample_data/sample_*.csv
+sample_data/processed/
+
+# Problematic Windows reserved names accidentally produced by scripts.
+nul

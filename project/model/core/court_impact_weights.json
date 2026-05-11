@@ -1,0 +1,56 @@
+{
+  "model_version": "1.0",
+  "training_date": "2026-02-01",
+  "description": "On-court Impact weights learned from WNBA player data using linear regression",
+  "target_variable": "mpg * ppg (playing time × scoring ability)",
+  "model_performance": {
+    "r_squared": 0.9675841718983419,
+    "mae": 24.316714180839707,
+    "n_samples": 128
+  },
+  "learned_weights": {
+    "ppg": 0.8158550038194259,
+    "apg": 0.12771385750529465,
+    "rpg": 0.018467043348261162,
+    "FG%": 0.035124714642308964,
+    "3P%": 0.002839380684709352
+  },
+  "original_formula_weights": {
+    "ppg": 0.45,
+    "apg": 0.2,
+    "rpg": 0.2,
+    "FG%": 0.1,
+    "3P%": 0.05
+  },
+  "weight_comparison": {
+    "ppg": {
+      "learned": 0.8158550038194259,
+      "original": 0.45,
+      "change": "+81.3%"
+    },
+    "apg": {
+      "learned": 0.12771385750529465,
+      "original": 0.2,
+      "change": "-36.1%"
+    },
+    "rpg": {
+      "learned": 0.018467043348261162,
+      "original": 0.2,
+      "change": "-90.8%"
+    },
+    "FG%": {
+      "learned": 0.035124714642308964,
+      "original": 0.1,
+      "change": "-64.9%"
+    },
+    "3P%": {
+      "learned": 0.002839380684709352,
+      "original": 0.05,
+      "change": "-94.3%"
+    }
+  },
+  "recommended_formula": {
+    "full": "court_impact = 0.8159 × ppg + 0.1277 × apg + 0.0185 × rpg + 0.0351 × FG% + 0.0028 × 3P%",
+    "simplified": "court_impact = 0.82 × ppg + 0.13 × apg"
+  }
+}

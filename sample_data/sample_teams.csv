@@ -1,0 +1,4 @@
+team_code,market_size,arena_capacity,brand_index,baseline_elo
+T01,1.00,10000,1.00,1500
+T02,0.85,9000,0.92,1460
+T03,1.20,12000,1.15,1550

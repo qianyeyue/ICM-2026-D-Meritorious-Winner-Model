@@ -1,0 +1,25 @@
+Task 3 data quick reference
+===========================
+
+Tracked in this repo:
+- code
+- small synthetic sample files
+- schema notes
+
+Not tracked:
+- full model output CSVs
+- generated figures
+- large Monte Carlo dumps
+- raw third-party data
+
+Expected generated files:
+- attendance_impact.csv
+- travel_burden.csv
+- revenue_sharing.csv
+- playoff_probability.csv
+- summary_statistics.csv
+
+Typical commands:
+
+  python -m project.model.task3.main
+  python -m project.model.task3.task1_impact --team LVA --expansion-city Toronto

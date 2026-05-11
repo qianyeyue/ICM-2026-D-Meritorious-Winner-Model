@@ -1,0 +1,21 @@
+{
+  "model_version": "2.0",
+  "training_date": "2026-02-01",
+  "description": "Brand Impact (明星效应) weights learned from WNBA player data",
+  "target_variable": "log1p(fans_w) - fan engagement proxy",
+  "model": "linear",
+  "model_performance": {
+    "r_squared": 0.22312607274770713,
+    "mae": 1.000305274151551,
+    "n_samples": 127
+  },
+  "learned_weights": {
+    "ppg": 0.3485379008364436,
+    "mpg": 0.07485705060300185,
+    "efficiency": 0.38355423457046167,
+    "versatility": 0.19305081399009302
+  },
+  "recommended_formula": {
+    "full": "brand_impact = 0.3836 * (FG% * ppg) + 0.3485 * ppg + 0.1931 * (apg + rpg) + 0.0749 * mpg"
+  }
+}

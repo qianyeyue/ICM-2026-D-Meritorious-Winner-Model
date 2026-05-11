@@ -1,0 +1,5 @@
+player_id,team_code,position,age,salary,performance_score,star_score
+P001,T01,G,24,95000,0.62,0.40
+P002,T01,F,28,135000,0.74,0.58
+P003,T02,C,30,120000,0.66,0.35
+P004,T03,G,22,82000,0.55,0.30
